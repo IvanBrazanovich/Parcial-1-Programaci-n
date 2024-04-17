@@ -92,7 +92,7 @@ public class ExcepcionesAritmeticas {
     public static void main(String[] args) {
         int divisionCero = 10 / 0; // Error: División por cero (ArithmeticException)
         int divisionEnteros = 5 / 2; // Resultado: 2 (ArithmeticException)
-        double conversionImplicita = 5 / 2; // Resultado: 2.0 (ArithmeticException) Sucede porque primero
+        double conversionImplicita = 5 / 2; // Resultado: 2.0 (ArithmeticException) Sucede porque primero se hace la división que se consideran enteros
         int tipoIncompatible = 5 + "2"; // Error: Operación entre tipos incompatibles (ClassCastException)
         int desbordamientoTipo = Integer.MAX_VALUE + 1; // Error: Desbordamiento de tipo (ArithmeticException)
         double divisionFloatInt = 10 / 3.0; // Resultado: 3.3333333333333335
@@ -102,7 +102,6 @@ public class ExcepcionesAritmeticas {
     }
 }
 ```
-se hace la división que se consideran enteros
 
 ### La estructura de decisión:
 La estructura de decisión permite ejecutar diferentes bloques de código dependiendo de si se cumple una condición o no. Por ejemplo, el if.
