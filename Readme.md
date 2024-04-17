@@ -544,3 +544,100 @@ while centinela and primero > ultimo {
     }
 ```
 
+
+# **Resumen de Teoría de Java**
+
+**Clases y Métodos en Java:**
+En Java, las clases sirven como modelos para crear objetos, definiendo sus atributos (miembros de datos) y comportamientos (métodos). Aquí tienes un desglose:
+
+1. **Clases:**
+   - **Definición:** Una clase es una plantilla para crear objetos, definiendo atributos y comportamientos.
+   - **Sintaxis:** 
+     ```java
+     public class MiClase {
+         // Miembros de datos (atributos)
+         private int miAtributo;
+         // Métodos (comportamientos)
+         public void miMetodo() {
+             // Cuerpo del método
+         }
+     }
+     ```
+   - **Modificadores de Acceso:** Controlan la visibilidad de atributos y métodos.
+     - `public`: Accesible desde cualquier lugar.
+     - `private`: Accesible solo dentro de la clase.
+     - `protected`: Accesible dentro del paquete y por subclases.
+     - `(default)`: Accesible dentro del paquete.
+   - **Instanciación:** Los objetos se crean usando la palabra clave `new`:
+     ```java
+     MiClase miObjeto = new MiClase();
+     ```
+   - **Constructores:** Métodos especiales para inicializar objetos.
+     ```java
+     public MiClase(int atributo) {
+         this.miAtributo = atributo;
+     }
+     ```
+
+2. **Métodos:**
+   - **Definición:** Funciones dentro de una clase que definen su comportamiento.
+   - **Sintaxis:**
+     ```java
+     public tipoDeRetorno nombreDelMetodo(tipoDeParámetro nombreDelParámetro) {
+         // Cuerpo del método
+     }
+     ```
+   - **Tipo de Retorno:** Tipo de dato del valor retornado.
+   - **Parámetros:** Valores de entrada.
+   - **Sobrecarga de Método:** Definir métodos con el mismo nombre pero diferentes listas de parámetros.
+   - **Invocación de Método:** Llamar a un método en un objeto.
+     ```java
+     miObjeto.miMetodo();
+     ```
+
+**Ejemplo:**
+```java
+public class Rectángulo {
+    private int longitud;
+    private int ancho;
+
+    public Rectángulo(int longitud, int ancho) {
+        this.longitud = longitud;
+        this.ancho = ancho;
+    }
+
+    public int calcularÁrea() {
+        return longitud * ancho;
+    }
+
+    public void setLongitud(int longitud) {
+        this.longitud = longitud;
+    }
+
+    public void setAncho(int ancho) {
+        this.ancho = ancho;
+    }
+}
+```
+**Uso:**
+```java
+Rectángulo rect = new Rectángulo(5, 3);
+System.out.println("Área: " + rect.calcularÁrea()); // Salida: Área: 15
+rect.setLongitud(7);
+rect.setAncho(4);
+System.out.println("Área: " + rect.calcularÁrea()); // Salida: Área: 28
+```
+
+**Miembros Estáticos:**
+Variables y métodos estáticos pertenecen a la clase misma en lugar de a una instancia específica. Son útiles para mantener datos o comportamientos comunes en todas las instancias de una clase.
+
+**Método Main:**
+El método `main` sirve como punto de entrada para programas Java, ejecutando código desde allí. Se declara con una firma específica y permite pasar argumentos desde la línea de comandos.
+
+**Estructuras de Datos en Java:**
+Java proporciona diversas estructuras de datos como arrays, objetos, ArrayList, LinkedList, HashMap, y permite crear estructuras de datos personalizadas mediante la definición de clases.
+
+**Static**
+static: Es una palabra clave que indica que el método main pertenece a la clase en sí misma, en lugar de a instancias específicas de la clase. Esto significa que el método main puede ser llamado sin tener que crear un objeto de la clase Main.
+
+ 
