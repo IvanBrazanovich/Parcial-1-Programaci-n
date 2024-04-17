@@ -640,4 +640,38 @@ Java proporciona diversas estructuras de datos como arrays, objetos, ArrayList, 
 **Static**
 static: Es una palabra clave que indica que el método main pertenece a la clase en sí misma, en lugar de a instancias específicas de la clase. Esto significa que el método main puede ser llamado sin tener que crear un objeto de la clase Main.
 
+
+**Un programa básico de java explicado:**
+
+ 
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, mundo!");
+    }
+}
+```
+Claro, aquí tienes una explicación de cada parte del programa:
+
+1. **public:** Es un modificador de acceso que indica que la clase es accesible desde cualquier otra clase. En Java, hay cuatro niveles de acceso: `public`, `protected`, `(default)` y `private`. `public` es el nivel de acceso más alto, lo que significa que la clase `Main` es accesible desde cualquier otro lugar del programa.
+
+2. **class:** En Java, `class` es una palabra clave utilizada para definir una clase. Una clase es una plantilla para crear objetos que tienen propiedades (atributos) y comportamientos (métodos). En este caso, estamos definiendo una clase llamada `Main`.
+
+3. **Main:** Es el nombre de la clase que estamos definiendo. En Java, el nombre de la clase debe coincidir con el nombre del archivo en el que se encuentra la clase.
+
+4. **{ y }:** Estas llaves delimitan el cuerpo de la clase. Todo el código que pertenece a la clase `Main` está contenido entre estas llaves.
+
+5. **public:** Es un modificador de acceso que indica que el método `main` es accesible desde cualquier otra clase. Esto es importante porque el método `main` es el punto de entrada del programa, y debe ser accesible para que el sistema pueda ejecutar el programa.
+
+6. **static:** Es una palabra clave que indica que el método `main` pertenece a la clase en sí misma, en lugar de a instancias específicas de la clase. Esto significa que el método `main` puede ser llamado sin tener que crear un objeto de la clase `Main`.
+
+7. **void:** Es una palabra clave que indica que el método `main` no devuelve ningún valor. `void` se utiliza cuando un método no tiene que devolver ningún resultado.
+
+8. **main:** Es el nombre del método. En Java, el método `main` es el punto de entrada de cualquier programa. El nombre del método debe ser exactamente "main", con minúsculas.
+
+9. **String[] args:** Este es el parámetro del método `main`. `args` es un array de cadenas que se utiliza para pasar argumentos de línea de comandos al programa. Por ejemplo, si ejecutas el programa desde la línea de comandos y pasas argumentos, estos argumentos se almacenarán en el array `args`.
+
+10. **System.out.println:** Este es un método estático de la clase `System` que se utiliza para imprimir texto en la consola. `println` significa "imprimir línea", y se utiliza para imprimir una cadena seguida de un salto de línea.
+
+11. **"¡Hola, mundo!":** Este es el mensaje que se imprimirá en la consola. Es una cadena de texto que está delimitada por comillas dobles. En este caso, el mensaje es "¡Hola, mundo!".
  
