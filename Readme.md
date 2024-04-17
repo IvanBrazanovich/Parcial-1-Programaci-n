@@ -211,6 +211,7 @@ System.out.println(mensaje);
 
 ## Java teoría
 Funcionamiento del JDK (Kit de Desarrollo de Java)
+
 El JDK (Java Development Kit) es un conjunto de herramientas necesarias para desarrollar aplicaciones Java. Incluye el compilador de Java (javac), la máquina virtual Java (JVM), bibliotecas Java estándar y otros recursos.
 
 **Compilador de Java (javac):** El compilador de Java convierte el código fuente Java (.java) en bytecode Java (.class), que es ejecutable en cualquier JVM.
