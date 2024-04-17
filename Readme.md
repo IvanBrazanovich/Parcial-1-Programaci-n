@@ -188,7 +188,7 @@ do {
 } while (j < 3);
 ```
 
-**Foreach: **Itera sobre una colección de elementos sin necesidad de un contador o índice explícito.
+**Foreach: ** Itera sobre una colección de elementos sin necesidad de un contador o índice explícito.
 ```java
 int[] numeros = {1, 2, 3, 4, 5};
 for (int numero : numeros) {
