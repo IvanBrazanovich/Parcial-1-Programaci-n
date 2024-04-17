@@ -1,13 +1,14 @@
-```markdown
-Definición de Proceso:
+
+### Definición de Proceso:
 Conjunto de acciones que logran pasar de un Estado inicial a un estado final. 
 - Materia prima (Datos)‒‒> Procesamiento ‒‒> Resultado final (Información)
 
-Acciones y Estados: 
+### Acciones y Estados: 
 Las acciones representan las operaciones que un programa o proceso puede realizar, mientras que los estados son las condiciones y atributos que definen a un sistema en un momento dado.
 
 Ejemplo en Java:*
 
+```markdown
 ```java
 public class AccionesEstados {
     public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class AccionesEstados {
 }
 ```
 
-Variables y Constantes: 
+### Variables y Constantes: 
 Las variables son espacios de memoria que contienen datos que pueden cambiar durante la ejecución del programa, mientras que las constantes son valores que no cambian durante la ejecución del programa.
 
 Ejemplo en Java:*
@@ -45,7 +46,7 @@ public class VariablesConstantes {
 }
 ```
 
-Tipos de Datos: 
+### Tipos de Datos: 
 Los tipos de datos en programación definen qué tipo de valores pueden almacenarse en las variables. Los tipos de datos pueden ser primitivos (como int, double, boolean, etc.) o de referencia (como String, arrays, objetos, etc.).
 
 ```java
@@ -63,8 +64,8 @@ public class TiposDeDatosPrimitivos {
     }
 }
 ```
+### Tipos de datos referencia
 ```markdown
-Tipos de datos referencia
 ```java
 public class TiposDeDatos {
     public static void main(String[] args) {
@@ -84,7 +85,7 @@ public class TiposDeDatos {
 }
 ```
 
-Operaciones
+### Operaciones
 A tener en cuenta java
 ```java
 public class ExcepcionesAritmeticas {
@@ -103,7 +104,7 @@ public class ExcepcionesAritmeticas {
 ```
 se hace la división que se consideran enteros
 
-La estructura de decisión:
+### La estructura de decisión:
 La estructura de decisión permite ejecutar diferentes bloques de código dependiendo de si se cumple una condición o no. Por ejemplo, el if.
 ```java
 int edad = 20;
@@ -114,7 +115,7 @@ if (edad >= 18) {
 }
 ```
 
-Estructura de decisión múltiple:
+### Estructura de decisión múltiple:
 La estructura de decisión múltiple permite elegir entre varias opciones de ejecución. En Java, esto se realiza con la sentencia switch.
 ```java
 int dia = 3;
@@ -130,7 +131,7 @@ switch (dia) {
 }
 ```
 
-¿Qué sucede si no uso “break” en el Switch?
+**¿Qué sucede si no uso “break” en el Switch?**
 Si no utilizas la instrucción break dentro de un bloque switch, el flujo de ejecución continuará pasando a través de los casos subsiguientes, ejecutando su código incluso si no se cumple la condición del caso. Esto se conoce como “fall-through” o “caída a través”.
 ```java
 int opcion = 2;
@@ -154,16 +155,16 @@ Opción 3 seleccionada
 Opción no válida
 ```
 
-Tipos de estructura de Control:
+### Tipos de estructura de Control:
 Sentencia IF-Else: Permite ejecutar un bloque de código si se cumple una condición, de lo contrario, ejecuta otro bloque.
 Sentencia Switch: Permite elegir entre múltiples bloques de código basados en el valor de una variable. 
 Sentencias anidadas: Se refiere a la inclusión de una estructura de control dentro de otra. Por ejemplo, un if dentro de otro if.
 
-La estructura de Iteración:
+### La estructura de Iteración:
 La estructura de iteración se utiliza para repetir un bloque de código mientras se cumple una condición.
 
-Tipos de estructura de iteración:
-Sentencia While: Ejecuta un bloque de código mientras se cumple una condición.
+### Tipos de estructura de iteración:
+**Sentencia While:** Ejecuta un bloque de código mientras se cumple una condición.
 ```java
 int contador = 0;
 while (contador < 5) {
@@ -172,14 +173,14 @@ while (contador < 5) {
 }
 ```
 
-Sentencia For: Ejecuta un bloque de código un número específico de veces.
+**Sentencia For: **Ejecuta un bloque de código un número específico de veces.
 ```java
 for (int i = 0; i < 5; i++) {
     System.out.println("Iteración: " + i);
 }
 ```
 
-Sentencia Do-While: Similar a while, pero garantiza que el bloque de código se ejecute al menos una vez antes de verificar la condición.
+**Sentencia Do-While:** Similar a while, pero garantiza que el bloque de código se ejecute al menos una vez antes de verificar la condición.
 ```java
 int j = 0;
 do {
@@ -188,7 +189,7 @@ do {
 } while (j < 3);
 ```
 
-Foreach: Itera sobre una colección de elementos sin necesidad de un contador o índice explícito.
+**Foreach: **Itera sobre una colección de elementos sin necesidad de un contador o índice explícito.
 ```java
 int[] numeros = {1, 2, 3, 4, 5};
 for (int numero : numeros) {
@@ -196,7 +197,7 @@ for (int numero : numeros) {
 }
 ```
 
-Tema 1: Operador Ternario en Java
+### Operador Ternario en Java
 El operador ternario en Java es una forma compacta de escribir una expresión condicional. Tiene la siguiente sintaxis:
 ```java
 condición ? valor_si_verdadero : valor_si_falso;
@@ -208,22 +209,22 @@ int edad = 20;
 String mensaje = (edad >= 18) ? “Eres mayor de edad” : “Eres menor de edad”;
 System.out.println(mensaje);
 ```
-```
-Java teoría
+
+## Java teoría
 Funcionamiento del JDK (Kit de Desarrollo de Java)
 El JDK (Java Development Kit) es un conjunto de herramientas necesarias para desarrollar aplicaciones Java. Incluye el compilador de Java (javac), la máquina virtual Java (JVM), bibliotecas Java estándar y otros recursos.
 
-Compilador de Java (javac): El compilador de Java convierte el código fuente Java (.java) en bytecode Java (.class), que es ejecutable en cualquier JVM.
+**Compilador de Java (javac):** El compilador de Java convierte el código fuente Java (.java) en bytecode Java (.class), que es ejecutable en cualquier JVM.
 
-Máquina Virtual Java (JVM): La JVM interpreta y ejecuta el bytecode generado por el compilador. La JVM es específica de cada sistema operativo y es responsable de administrar la memoria, gestionar el ciclo de vida de los objetos y ejecutar el código Java de manera eficiente.
+**Máquina Virtual Java (JVM):** La JVM interpreta y ejecuta el bytecode generado por el compilador. La JVM es específica de cada sistema operativo y es responsable de administrar la memoria, gestionar el ciclo de vida de los objetos y ejecutar el código Java de manera eficiente.
 
-Bibliotecas Java Estándar: El JDK incluye un conjunto de bibliotecas estándar de Java que proporcionan funcionalidades básicas para el desarrollo de aplicaciones, como manipulación de cadenas, entrada/salida, networking, colecciones, etc.
+**Bibliotecas Java Estándar**: El JDK incluye un conjunto de bibliotecas estándar de Java que proporcionan funcionalidades básicas para el desarrollo de aplicaciones, como manipulación de cadenas, entrada/salida, networking, colecciones, etc.
 
-Herramientas de Desarrollo: Además del compilador y la JVM, el JDK proporciona varias herramientas de desarrollo útiles, como el depurador (jdb), el generador de documentación (javadoc), el descompilador (javap), entre otros.
+**Herramientas de Desarrollo:** Además del compilador y la JVM, el JDK proporciona varias herramientas de desarrollo útiles, como el depurador (jdb), el generador de documentación (javadoc), el descompilador (javap), entre otros.
 
 El JDK se instala en el sistema operativo del desarrollador y se utiliza para escribir, compilar y ejecutar programas Java en cualquier plataforma compatible. Las aplicaciones desarrolladas con el JDK pueden ejecutarse en cualquier sistema que tenga instalada una JVM compatible, lo que hace que Java sea un lenguaje de programación verdaderamente portátil y multiplataforma.
 
-Funcionamiento de Compilación en Java
+### Funcionamiento de Compilación en Java
 Java utiliza un enfoque de compilación y ejecución separadas. Durante la compilación, el compilador de Java traduce el código fuente (.java) a bytecode (.class), que es un código intermedio ejecutable en cualquier máquina virtual Java (JVM).
 
 Ejemplo de compilación en Java:
@@ -232,7 +233,7 @@ javac MiPrograma.java
 ```
 Esto compila el archivo MiPrograma.java y produce MiPrograma.class, que contiene el bytecode ejecutable.
 
-Sistemas Operativos en los que Java se Puede Ejecutar
+### Sistemas Operativos en los que Java se Puede Ejecutar
 Java es un lenguaje de programación multiplataforma, lo que significa que puede ejecutarse en varios sistemas operativos, incluyendo:
 - Windows
 - macOS
@@ -240,7 +241,7 @@ Java es un lenguaje de programación multiplataforma, lo que significa que puede
 - Solaris
 - Android (basado en Linux)
 
-Teoría - secuencias
+## Teoría - secuencias
 
 ```python
 //Contar las palabras de un párrafo
@@ -396,7 +397,7 @@ while (secuencia2[i] != marca){ int b = 0; bool existe = false; while ((secuenci
 ```
 
 
-Registros y Archivos
+## Registros y Archivos
 Un registro, en programación, es un tipo de dato estructurado formado por la unión de varios elementos bajo una misma estructura. Estos elementos pueden ser, o bien datos elementales (entero, real, carácter,...), o bien otras estructuras de datos. A cada uno de esos elementos se le llama campo. Una colección de registros se denomina archivo. 
 ```java
 Cliente Registro Identificador entero Nombre cadena(30) Apellido cadena(20) FRegistro 
