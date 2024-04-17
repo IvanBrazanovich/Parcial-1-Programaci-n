@@ -14,9 +14,11 @@ public class AccionesEstados {
     public static void main(String[] args) {
         int a = 5;
         int b = 3;
+        
         // Acción: Sumar
         int suma = a + b;
         System.out.println("La suma es: " + suma);
+        
         // Estado: Comparación
         if (a > b) {
             System.out.println("El estado es: 'a' es mayor que 'b'.");
@@ -36,14 +38,16 @@ Ejemplo en Java:*
 public class VariablesConstantes {
     public static void main(String[] args) {
         // Variables
-        int variableEntera = 10; 
+        int variableEntera = 10;
+
         // Constantes
         final double PI = 3.14159;
-
+        
         System.out.println("Variable entera: " + variableEntera);
+
         System.out.println("Constante PI: " + PI);
     }
-}
+} 
 ```
 
 ### Tipos de Datos: 
@@ -54,13 +58,12 @@ public class TiposDeDatosPrimitivos {
     public static void main(String[] args) {
         byte byteVariable = 127; // byte: 8 bits, rango de -128 a 127.
         short shortVariable = 32767; // short: 16 bits, rango de -32,768 a 32,767.
-        int intVariable = 2147483647; // int: 32 bits, rango de -231 a (231 - 1).
-        long longVariable = 9223372036854775807L; // long: 64 bits, rango de -263 a (263 - 1).
+        int intVariable = 2147483647; // int: 32 bits, rango de -2^31 a (2^31 - 1).
+        long longVariable = 9223372036854775807L; // long: 64 bits, rango de -2^63 a (2^63 - 1).
         float floatVariable = 3.4028235e+38f; // float: 32 bits, rango de ±1.4e-45 a ±3.4028235e+38 (precisión de 7 decimales).
         double doubleVariable = 1.7976931348623157e+308; // double: 64 bits, rango de ±4.9e-324 a ±1.7976931348623157e+308 (precisión de 15 decimales).
         boolean booleanVariable = true; // boolean: representa dos valores: true o false.
-        char charVariable = 'A'; // char: 16 bits Unicode, rango de '\u0000' (0) a '\uffff' (65,535).
-        // No, en Java, un solo carácter (tipo char) solo puede contener un único carácter Unicode. No puede contener una cadena completa de texto como “Hola como estás”.
+        char charVariable = 'A'; // char: 16 bits Unicode, rango de '\u0000' (0) a '\uffff' (65,535). No, en Java, un solo carácter (tipo char) solo puede contener un único carácter Unicode. No puede contener una cadena completa de texto como "Hola como estás".
     }
 }
 ```
@@ -77,10 +80,11 @@ public class TiposDeDatos {
         boolean[] booleanos = {true, false, true};
         // Array de caracteres
         char[] caracteres = {'a', 'b', 'c'};
-        // Array de floats
+        //Array de floats
         float[] floatArray = {3.14f, 2.718f, 1.618f, 4.2f, 5.6f};
         // Array de cadenas
         String[] cadenas = {"Hola", "Mundo", "Java"};
+        
     }
 }
 ```
@@ -91,16 +95,25 @@ A tener en cuenta java
 public class ExcepcionesAritmeticas {
     public static void main(String[] args) {
         int divisionCero = 10 / 0; // Error: División por cero (ArithmeticException)
+        
         int divisionEnteros = 5 / 2; // Resultado: 2 (ArithmeticException)
+        
         double conversionImplicita = 5 / 2; // Resultado: 2.0 (ArithmeticException) Sucede porque primero se hace la división que se consideran enteros
+        
         int tipoIncompatible = 5 + "2"; // Error: Operación entre tipos incompatibles (ClassCastException)
+        
         int desbordamientoTipo = Integer.MAX_VALUE + 1; // Error: Desbordamiento de tipo (ArithmeticException)
+        
         double divisionFloatInt = 10 / 3.0; // Resultado: 3.3333333333333335
+        
         double divisionDoubleInt = 10.5 / 2; // Resultado: 5.25
+        
         float multiplicacionFloatDouble = 3.5f * 2.0; // Resultado: 7.0
+        
         double sumaDoubleInt = 5.0 + 3; // Resultado: 8.0
     }
 }
+
 ```
 
 ### La estructura de decisión:
@@ -111,7 +124,7 @@ if (edad >= 18) {
     System.out.println("Eres mayor de edad.");
 } else {
     System.out.println("Eres menor de edad.");
-}
+ }
 ```
 
 ### Estructura de decisión múltiple:
@@ -210,7 +223,7 @@ System.out.println(mensaje);
 ```
 
 ## Java teoría
-Funcionamiento del JDK (Kit de Desarrollo de Java)
+### Funcionamiento del JDK (Kit de Desarrollo de Java)
 
 El JDK (Java Development Kit) es un conjunto de herramientas necesarias para desarrollar aplicaciones Java. Incluye el compilador de Java (javac), la máquina virtual Java (JVM), bibliotecas Java estándar y otros recursos.
 
@@ -245,23 +258,40 @@ Java es un lenguaje de programación multiplataforma, lo que significa que puede
 
 ```python
 //Contar las palabras de un párrafo
-var secuencia, contadorPalabra, charAnterior; 
-arr secuencia if cc != marca and cc != “ ”{ contadorPalabra++; } 
+var secuencia, contadorPalabra, charAnterior;
 
-while cc =! marca { 
-    if (charAnterior→" " and cc != " ") {
+arr secuencia
+if cc != marca  and cc != " "{
+    contadorPalabra++;
+    }
+    
+    avz
+while cc =! marca {
+    
+    if (charAnterior == " "  and cc != " ") {
         contadorPalabra ++;
-    } 
+        } 
     charAnterior = cc
-} 
+    avz
+    } 
+    
+   
 ```
 
 Contar las a de una secuencia
 ```python
-Var secuencia; var contar 
-contarA:= 0 escribir (“Ingresar texto”) secuencia:= leer () arrancar while cc != marca { if(cc→"a" or cc ↔ “A” or cc ↔
-“Á” or cc ↔ “a”) { contarA:= contarA + 1 } 
-av } 
+Var secuencia; var contar
+
+contarA:= 0
+escribir ("Ingresar texto")
+secuencia:= leer ()
+arrancar 
+while cc != marca {
+        if(cc == "a" or cc == "A" or cc == "Á" or cc == "a") {
+          contarA:= contarA + 1
+           }             
+    av
+    }
 ``` 
 
 - Elaborar un algoritmo para carga un arreglo de 50 nombres de 30 caracteres 
@@ -273,127 +303,192 @@ for (int i = 0; i < 50 ; i++) {
 }
 ```
 
-- Elaborar un algoritmo para eliminar un nombre dado en un arreglo de 50 nombres de 30 caracteres 
-```python
-real[30] arregloNombres[50] 
-metodo llenarAlgoritmo(arregloNombres) { 
-    for (int i = 0; i < 50 ; i++) {
-        print("Ingresar un nombre")
-        arregloNombres[i] = ingresar()
-    }
-} 
-metodo eliminarPorNombre(arregloNombres) { 
-    print(“Ingresar nombre a eliminar”); 
-    nombreEliminar = ingresar(); 
-   
+ ```python
+Elaborar un algoritmo para eliminar un nombre dado en un  arreglo de 50 nombres de 30 caracteres 
 
- for(int i = 0; i <50 ; i++) {
-        if(arregloNombres[i]→nombreEliminar)
-        arregloNombres[i] = " ";
-        break;
-    }
+real[30] arregloNombres[50]
+
+metodo llenarAlgoritmo(arregloNombres) {
+	
+	for (int i = 0; i < 50 ; i++) {
+	    
+	    print("Ingresar un nombre")
+	    arregloNombres[i] = ingresar()
+	    }
+	 
 }
 
-llenarAlgoritmo(arregloNombres) 
-eliminarPorNombre(arregloNombres) 
+metodo eliminarPorNombre(arregloNombres) {
+    print("Ingresar nombre a eliminar");
+    nombreEliminar = ingresar();
+    
+    for(int i = 0; i <50 ; i++) {
+        if(arregloNombres[i]
 ```
 
-- Contar cuántas palabras dentro de un texto tienen un “A” dentro: 
-```python
-Contar cuántas palabras dentro de un texto tienen un “A” dentro: sec secuencia1 
-arr secuencia1 contadorA = 0; 
-while (cc != marca) { enPalabra = 0; existeAenPalabra = false; 
-    if (ccAnterior→" " and cc != " ") {
+
+ ```python
+Contar cuántas palabras dentro de un texto tienen un "A" dentro:
+sec secuencia1 
+
+arr secuencia1
+contadorA = 0;
+
+while (cc != marca) {
+    enPalabra = 0;
+    existeAenPalabra = false; 
+    
+    if (ccAnterior == " "  and cc != " ") {
         enPalabra = true;
-    }
-    if (cc ↔ " ") {
+     }
+     
+    if (cc == " ") {
         if(enPalabra and existeAenPalabra) {
-            contadorA++; 
-        } 
-        enPalabra = false;
+            contadorA++;  
+            }
+            
+         enPalabra = false;
+        }   
+        
+     if(cc == "a" and enPalabra) {
+       existeAenPalabra = true
+       } 
+    
+    avz 
     } 
-    if(cc ↔ "a" and enPalabra) {
-        existeAenPalabra = true
-    } 
-} 
 ```
 
 Intersección de secuencias
 ```python
-Elaborar un algoritmo que dadas dos listas que haga la interesección de las mismas de una tercera.
-sec secuencia1, secuencia2, secuencia3; int i = 0; int d = 0; arr secuencia2 arr secuencia1 crear secuencia3;
-while (secuencia1[i] != marca){ int b = 0; bool existe = false; while ((secuencia2[b] != marca) and !existe) {
-    if(secuencia1[i]→secuencia2[b]) { 
-        existe = true 
-        secuencia3[d] = secuencia1[i] 
-        d++; 
+Elaborar un algoritmo que dadas dos listas que haga la interesección de las mismas de una tercera.  
+sec secuencia1, secuencia2, secuencia3;
+int i = 0;
+int d = 0;
+arr secuencia2
+arr secuencia1 
+crear secuencia3;
+while (secuencia1[i] != marca){
+    int b = 0;
+    bool existe = false; 
+    while ((secuencia2[b] != marca) and !existe) {
+        if(secuencia1[i] == secuencia2[b]) {
+            existe = true
+            secuencia3[d] = secuencia1[i]
+            d++;
+            }
+            b++;
+         }
+    
+    i++;
     } 
-    b++; 
-} 
-    i++; 
-} 
 ```
 
 Concatenación de secuencias 
 ```python
-lista1 String arreglo[n]; lista2 String arreglo[m]; lista3 String arreglo[n+m]; i:=0; 
-Mientras i <= n lista3[i] = lista1[i]; i:= i +1; FM 
-j:= 0; 
-Mientras j <= m lista3[i] := lista2[j]; i:= i + 1; j:= j + 1; FM 
+lista1 String arreglo[n];
+lista2 String arreglo[m];
+lista3 String arreglo[n+m];
+i:=0;
+
+Mientras i <= n
+	lista3[i] = lista1[i];
+	i:= i +1;
+FM
+
+j:= 0;
+
+Mientras j <= m
+	lista3[i] := lista2[j];
+	i:= i + 1;
+	j:= j + 1;
+FM 
+	
+	
 ```
 
 -  Unión de secuencias 
 ```python
-Elaborar un algoritmo que dadas dos genera una unión en una tercera 
-sec secuencia1, secuencia2, secuencia3; arr secuencia1 crear secuencia3; int i = 0 while (secuencia1[i] != marca) {
-    secuencia3[i]→secuencia1[i] 
-    i++; 
-} 
-int c = 0 int d = 0; arr secuencia2 while (secuencia2[c] != marca) { 
-    bool existe = false; int b = 0;
+Elaborar un algoritmo que dadas dos genera una unión en una tercera
+
+sec secuencia1, secuencia2, secuencia3;
+arr secuencia1 
+crear secuencia3;
+int i = 0
+while (secuencia1[i] != marca) {
+    secuencia3[i] == secuencia1[i]    
+    i++;
+    } 
+    
+int c = 0
+int d = 0;
+arr secuencia2
+while (secuencia2[c] != marca) {
+    bool existe = false;
+    int b = 0;
     while((secuencia3[b] != marca) and !existe) 
-        if(secuencia3[b] ↔ secuencia2[c]) { 
-            existe = true; 
-        } 
-        b++
-} 
+        if(secuencia3[b] == secuencia2[c]) {
+            existe = true;   
+            
+           }
+      b++
+     }      
     if(!existe) {
         secuencia3[d + i] = secuencia2[c]
         d++;
-    }
-    c++;
-} 
+      }
+     c++;
+    } 
+    
+    
+ 
 ```
  Diferencia de secuencias
 (A v B) - (intersección de A y B)
 ```python
-Elaborar un algoritmo que dadas dos listass permita efecutar la operación de diferencias entre las mismas en una tercera.
-sec secuencia1, secuencia2, secuencia3; int i = 0; int d = 0; arr secuencia2 arr secuencia1 crear secuencia3;
-while (secuencia1[i] != marca){ int b = 0; bool existe = false; while ((secuencia2[b] != marca) and !existe) {
-    if(secuencia1[i]→secuencia2[b]) { 
-        existe = true 
+Elaborar un algoritmo que dadas dos listass permita efecutar la operación de diferencias entre las mismas en una tercera.  
+ sec secuencia1, secuencia2, secuencia3;
+int i = 0;
+int d = 0;
+arr secuencia2
+arr secuencia1 
+crear secuencia3;
+while (secuencia1[i] != marca){
+    int b = 0;
+    bool existe = false; 
+    while ((secuencia2[b] != marca) and !existe) {
+        if(secuencia1[i] == secuencia2[b]) {
+            existe = true
+            }
+            b++;
+         }
+         
+       if(!existe) {
+         secuencia3[d] = secuencia1[i]
+         d++;  
+        } 
+    
+    i++;
     } 
-    b++; 
-} 
-    if(!existe) {
-        secuencia3[d] = secuencia1[i]
-        d++; 
-    }
-    i++; 
-} 
-i = 0; 
-while (secuencia2[i] != marca){ int b = 0; bool existe = false; while ((secuencia1[b] != marca) and !existe) {
-    if(secuencia2[i] ↔ secuencia1[b]) { 
-        existe = true 
+    
+ i = 0;    
+while (secuencia2[i] != marca){
+    int b = 0;
+    bool existe = false; 
+    while ((secuencia1[b] != marca) and !existe) {
+        if(secuencia2[i]  == secuencia1[b]) {
+            existe = true
+            }
+            b++;
+         }
+         
+       if(!existe) {
+         secuencia3[d] = secuencia2[i]
+         d++;  
+        } 
+    
+    i++;
     } 
-    b++; 
-} 
-    if(!existe) {
-        secuencia3[d] = secuencia2[i]
-        d++; 
-    }
-    i++; 
-} 
+    
 ```
 
 
@@ -423,15 +518,27 @@ La búsqueda binaria consiste como su nombre lo indica en dividir el arreglo en 
 Binary search
 ```java
 // Encontrar entre un arreglo ordenado de 100 legajos uno específico con un algorítmo binario 
-legajos real arreglo[100] var legajoBuscado, centinela, i, primero, ultimo; centinela := verdadero primero := 0
-ultimo:= 99 while centinela and primero > ultimo { i := (primero + ultimo / 2) if ( legajos[i] < legajoBuscado) {
-primero := i + 1 } else if (legajos[i] > legajoBuscado) { ultimo:= i - 1 } else if ( legajos[i]→legajoBuscado) {
-centinela:= falso print (“Encontrado en posición” + (i + 1))
-} 
-if (primero > ultimo) {
-centinela := falso 
-print ("No se encontró en el arreglo")
-}
-}
+
+legajos real arreglo[100]
+var legajoBuscado, centinela, i, primero, ultimo;
+centinela := verdadero
+primero := 0 
+ultimo:= 99
+while centinela and primero > ultimo {
+    i := (primero + ultimo / 2)
+    if ( legajos[i] < legajoBuscado) {
+        primero := i + 1
+    } else if (legajos[i] > legajoBuscado) { 
+        ultimo:= i - 1
+    } else if ( legajos[i] == legajoBuscado) {
+      centinela:= falso
+       print ("Encontrado en posición" + (i + 1))  
+     }
+     
+     if (primero > ultimo) {
+         centinela := falso 
+         print ("No se encontró en el arreglo")
+         }
+    }
 ```
 
