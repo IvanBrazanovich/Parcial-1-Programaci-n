@@ -168,9 +168,11 @@ Opción no válida
 ```
 
 ### Tipos de estructura de Control:
-Sentencia IF-Else: Permite ejecutar un bloque de código si se cumple una condición, de lo contrario, ejecuta otro bloque.
-Sentencia Switch: Permite elegir entre múltiples bloques de código basados en el valor de una variable. 
-Sentencias anidadas: Se refiere a la inclusión de una estructura de control dentro de otra. Por ejemplo, un if dentro de otro if.
+**Sentencia IF-Else:** Permite ejecutar un bloque de código si se cumple una condición; de lo contrario, ejecuta otro bloque.
+
+**Sentencia Switch:** Permite elegir entre múltiples bloques de código basados en el valor de una variable.
+
+**Sentencias anidadas:** Se refiere a la inclusión de una estructura de control dentro de otra, como un if dentro de otro if.
 
 ### La estructura de Iteración:
 La estructura de iteración se utiliza para repetir un bloque de código mientras se cumple una condición.
