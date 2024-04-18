@@ -177,6 +177,68 @@ Opción no válida
 ### La estructura de Iteración:
 La estructura de iteración se utiliza para repetir un bloque de código mientras se cumple una condición.
 
+### Continue y Break: 
+- **Break**: Termina inmediatamente la ejecución de un bucle o switch statement.
+- **Continue**: Salta a la siguiente iteración de un bucle, omitiendo cualquier código restante en el bloque de bucle para esa iteración específica.
+
+### Ejemplo de `break` con `for`:
+
+```java
+// Utilizando un bucle for para iterar sobre una matriz de números
+int[] numeros = {1, 2, 3, 4, 5};
+
+for (int numero : numeros) {
+    System.out.println(numero);
+    if (numero == 3) {
+        break; // Termina el bucle cuando se alcanza el número 3
+    }
+}
+```
+
+### Ejemplo de `continue` con `for`:
+
+```java
+// Utilizando un bucle for para iterar sobre una matriz de números
+int[] numeros = {1, 2, 3, 4, 5};
+
+for (int numero : numeros) {
+    if (numero % 2 == 0) {
+        continue; // Omite los números pares
+    }
+    System.out.println(numero);
+}
+```
+
+### Ejemplo de `break` con `for each`:
+
+```java
+// Utilizando un bucle for each para iterar sobre una lista de nombres
+List<String> nombres = Arrays.asList("Juan", "María", "Pedro", "Ana");
+
+for (String nombre : nombres) {
+    System.out.println(nombre);
+    if (nombre.equals("Pedro")) {
+        break; // Termina el bucle cuando se encuentra el nombre "Pedro"
+    }
+}
+```
+
+### Ejemplo de `continue` con `for each`:
+
+```java
+// Utilizando un bucle for each para iterar sobre una lista de nombres
+List<String> nombres = Arrays.asList("Juan", "María", "Pedro", "Ana");
+
+for (String nombre : nombres) {
+    if (nombre.equals("Pedro")) {
+        continue; // Omite el nombre "Pedro"
+    }
+    System.out.println(nombre);
+}
+```
+
+Estos ejemplos demuestran cómo `break` y `continue` pueden usarse en combinación con bucles `for` y `for each` en Java para controlar el flujo de ejecución del programa.
+
 ### Tipos de estructura de iteración:
 **Sentencia While:** Ejecuta un bloque de código mientras se cumple una condición.
 ```java
@@ -325,7 +387,16 @@ metodo eliminarPorNombre(arregloNombres) {
     nombreEliminar = ingresar();
     
     for(int i = 0; i <50 ; i++) {
-        if(arregloNombres[i]
+        if(arregloNombres[i] == nombreEliminar)
+        arregloNombres[i] =  " ";
+        break;
+        }
+        
+    
+    }
+
+llenarAlgoritmo(arregloNombres)
+eliminarPorNombre(arregloNombres) 
 ```
 
 
@@ -526,7 +597,7 @@ var legajoBuscado, centinela, i, primero, ultimo;
 centinela := verdadero
 primero := 0 
 ultimo:= 99
-while centinela and primero > ultimo {
+while centinela and primero < ultimo {
     i := (primero + ultimo / 2)
     if ( legajos[i] < legajoBuscado) {
         primero := i + 1
@@ -674,4 +745,18 @@ Claro, aquí tienes una explicación de cada parte del programa:
 10. **System.out.println:** Este es un método estático de la clase `System` que se utiliza para imprimir texto en la consola. `println` significa "imprimir línea", y se utiliza para imprimir una cadena seguida de un salto de línea.
 
 11. **"¡Hola, mundo!":** Este es el mensaje que se imprimirá en la consola. Es una cadena de texto que está delimitada por comillas dobles. En este caso, el mensaje es "¡Hola, mundo!".
- 
+
+
+ ### La salida estándar
+
+➙ se utiliza la clase **System* y su método *out** para imprimir resultados por la salida estándar.
+
+*método out* ➙ es estático, así que puede usarse en cualquier parte del código sin tener que crear una instancia de la clase System.
+
+*System.out.println()* ➙ imprime en la consola, añadiendo un salto de línea después de la salida. Se puede usar también con variables y resultados de expresiones.
+
+*método print()* ➙ funciona como println(), pero no añade el salto de línea.
+
+*System.out.printf()* ➙ permite formatear la salida con formato específico. Utiliza marcadores de posición en la cadena de formato (%d para enteros; %f para flotantes; %s para cadenas). Es útil para controlar la presentación de los datos.
+
+*System.out.write()* ➙ escribe un solo carácter en la salida estándar.
