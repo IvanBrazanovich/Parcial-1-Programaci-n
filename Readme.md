@@ -31,7 +31,7 @@ Aquí tienes el índice generado para el contenido proporcionado:
 Ahora, ¿hay algo más con lo que pueda ayudarte?
 
 
-
+## Básicos
 ### Definición de Proceso:
 Conjunto de acciones que logran pasar de un Estado inicial a un estado final. 
 - Materia prima (Datos)‒‒> Procesamiento ‒‒> Resultado final (Información)
@@ -149,7 +149,7 @@ public class ExcepcionesAritmeticas {
 
 ```
 
-### La estructura de decisión:
+## La estructura de decisión:
 La estructura de decisión permite ejecutar diferentes bloques de código dependiendo de si se cumple una condición o no. Por ejemplo, el if.
 ```java
 int edad = 20;
@@ -207,7 +207,22 @@ Opción no válida
 
 **Sentencias anidadas:** Se refiere a la inclusión de una estructura de control dentro de otra, como un if dentro de otro if.
 
-### La estructura de Iteración:
+
+### Operador Ternario en Java
+El operador ternario en Java es una forma compacta de escribir una expresión condicional. Tiene la siguiente sintaxis:
+```java
+condición ? valor_si_verdadero : valor_si_falso;
+```
+
+Ejemplo en Java:
+```java
+int edad = 20;
+String mensaje = (edad >= 18) ? “Eres mayor de edad” : “Eres menor de edad”;
+System.out.println(mensaje);
+```
+
+
+## La estructura de Iteración:
 La estructura de iteración se utiliza para repetir un bloque de código mientras se cumple una condición.
 
 ### Continue y Break: 
@@ -306,18 +321,6 @@ for (int numero : numeros) {
 }
 ```
 
-### Operador Ternario en Java
-El operador ternario en Java es una forma compacta de escribir una expresión condicional. Tiene la siguiente sintaxis:
-```java
-condición ? valor_si_verdadero : valor_si_falso;
-```
-
-Ejemplo en Java:
-```java
-int edad = 20;
-String mensaje = (edad >= 18) ? “Eres mayor de edad” : “Eres menor de edad”;
-System.out.println(mensaje);
-```
 
 ## Java teoría
 ### Funcionamiento del JDK (Kit de Desarrollo de Java)
