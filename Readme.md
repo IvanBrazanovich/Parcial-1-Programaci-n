@@ -1,8 +1,4 @@
 # Table of contents
-Aquí tienes el índice generado para el contenido proporcionado:
-
-### Table of Contents
- 
 - [Básicos](#básicos)
   - [Definición de Proceso](#definición-de-proceso)
   - [Acciones y Estados](#acciones-y-estados)
