@@ -167,6 +167,12 @@ switch (dia) {
         System.out.println("Día no válido");
 }
 ```
+A tener en cuenta usando switch:
+1. El valor a evaluar solo puede ser un char, byte, short, int, String o un enum. 
+2. En los “case” no se permiten operadores relacionales. Solo se puede evaluar igualdad. 
+3. La instrucción break es opcional y se utilizará en función de cómo se quiera que funcione el switch. En caso de no utilizarse, el flujo de ejecución entra en “fall through” lo que implica que en caso de encontrar un case que cumpla la condición, el flujo de ejecución ejecutaría ese case y los que pudiera haber a continuación.
+
+
 
 **¿Qué sucede si no uso “break” en el Switch?**
 Si no utilizas la instrucción break dentro de un bloque switch, el flujo de ejecución continuará pasando a través de los casos subsiguientes, ejecutando su código incluso si no se cumple la condición del caso. Esto se conoce como “fall-through” o “caída a través”.
