@@ -750,8 +750,8 @@ public class Main {
     }
 }
 ```
-Claro, aquí tienes una explicación de cada parte del programa:
 
+ 
 1. **public:** Es un modificador de acceso que indica que la clase es accesible desde cualquier otra clase. En Java, hay cuatro niveles de acceso: `public`, `protected`, `(default)` y `private`. `public` es el nivel de acceso más alto, lo que significa que la clase `Main` es accesible desde cualquier otro lugar del programa.
 
 2. **class:** En Java, `class` es una palabra clave utilizada para definir una clase. Una clase es una plantilla para crear objetos que tienen propiedades (atributos) y comportamientos (métodos). En este caso, estamos definiendo una clase llamada `Main`.
