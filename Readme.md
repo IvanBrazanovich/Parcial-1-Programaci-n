@@ -749,14 +749,14 @@ Claro, aquí tienes una explicación de cada parte del programa:
 
  ### La salida estándar
 
-➙ se utiliza la clase **System* y su método *out** para imprimir resultados por la salida estándar.
+➙ se utiliza la clase **"System" y su método "out"** para imprimir resultados por la salida estándar.
 
-*método out* ➙ es estático, así que puede usarse en cualquier parte del código sin tener que crear una instancia de la clase System.
+**método out** ➙ es estático, así que puede usarse en cualquier parte del código sin tener que crear una instancia de la clase System.
 
-*System.out.println()* ➙ imprime en la consola, añadiendo un salto de línea después de la salida. Se puede usar también con variables y resultados de expresiones.
+**System.out.println()** ➙ imprime en la consola, añadiendo un salto de línea después de la salida. Se puede usar también con variables y resultados de expresiones.
 
-*método print()* ➙ funciona como println(), pero no añade el salto de línea.
+**método print()** ➙ funciona como println(), pero no añade el salto de línea.
 
-*System.out.printf()* ➙ permite formatear la salida con formato específico. Utiliza marcadores de posición en la cadena de formato (%d para enteros; %f para flotantes; %s para cadenas). Es útil para controlar la presentación de los datos.
+**System.out.printf()** ➙ permite formatear la salida con formato específico. Utiliza marcadores de posición en la cadena de formato (%d para enteros; %f para flotantes; %s para cadenas). Es útil para controlar la presentación de los datos.
 
-*System.out.write()* ➙ escribe un solo carácter en la salida estándar.
+**System.out.write()** ➙ escribe un solo carácter en la salida estándar.
