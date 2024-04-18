@@ -1,3 +1,36 @@
+# Table of contents
+Aquí tienes el índice generado para el contenido proporcionado:
+
+### Table of Contents
+
+- [Definición de Proceso](#definición-de-proceso)
+- [Acciones y Estados](#acciones-y-estados)
+- [Variables y Constantes](#variables-y-constantes)
+- [Tipos de Datos](#tipos-de-datos)
+- [Tipos de Datos Referencia](#tipos-de-datos-referencia)
+- [Operaciones](#operaciones)
+- [La estructura de decisión](#la-estructura-de-decisión)
+- [Estructura de decisión múltiple](#estructura-de-decisión-múltiple)
+- [Tipos de estructura de Control](#tipos-de-estructura-de-control)
+- [La estructura de Iteración](#la-estructura-de-iteración)
+- [Continue y Break](#continue-y-break)
+- [Ejemplo de `break` con `for`](#ejemplo-de-break-con-for)
+- [Ejemplo de `continue` con `for`](#ejemplo-de-continue-con-for)
+- [Ejemplo de `break` con `for each`](#ejemplo-de-break-con-for-each)
+- [Ejemplo de `continue` con `for each`](#ejemplo-de-continue-con-for-each)
+- [Tipos de estructura de iteración](#tipos-de-estructura-de-iteración)
+- [Operador Ternario en Java](#operador-ternario-en-java)
+- [Funcionamiento del JDK (Kit de Desarrollo de Java)](#funcionamiento-del-jdk-kit-de-desarrollo-de-java)
+- [Funcionamiento de Compilación en Java](#funcionamiento-de-compilación-en-java)
+- [Sistemas Operativos en los que Java se Puede Ejecutar](#sistemas-operativos-en-los-que-java-se-puede-ejecutar)
+- [Teoría - secuencias](#teoría---secuencias)
+- [Registros y Archivos](#registros-y-archivos)
+- [Resumen de Teoría de Java](#resumen-de-teoría-de-java)
+- [La salida estándar](#la-salida-estándar)
+
+Ahora, ¿hay algo más con lo que pueda ayudarte?
+
+
 
 ### Definición de Proceso:
 Conjunto de acciones que logran pasar de un Estado inicial a un estado final. 
