@@ -631,7 +631,7 @@ var legajoBuscado, centinela, i, primero, ultimo;
 centinela := verdadero
 primero := 0 
 ultimo:= 99
-while centinela and primero < ultimo {
+while (centinela and (primero <= ultimo)) {
     i := (primero + ultimo / 2)
     if ( legajos[i] < legajoBuscado) {
         primero := i + 1
@@ -648,6 +648,37 @@ while centinela and primero < ultimo {
          }
     }
 ```
+
+**Otro ejemplo**
+```
+real arregloNum[100]
+int busquedaNum = n;
+int primero = 0;
+int ultimo = 99;
+int i = 0;
+bool existe = false;
+
+while (primero <= ultimo) and !existe {
+    i = (primero + ultimo) / 2;
+    
+    if (arregloNum[i] < busquedaNum) {
+        primero = i + 1;
+    } else if (arregloNum[i] > busquedaNum) {
+        ultimo = i - 1;
+    } else if (arregloNum[i] == busquedaNum) {
+        existe = true;
+        print("Existe el número en la posición: " (i + 1))
+    }
+    
+    if(primero > ultimo) {
+        print("No existe el número")
+        }
+}
+
+
+```
+
+
 
 
 # **Resumen de Teoría de Java**
