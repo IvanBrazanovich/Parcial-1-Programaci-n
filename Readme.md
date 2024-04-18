@@ -2,8 +2,7 @@
 Aquí tienes el índice generado para el contenido proporcionado:
 
 ### Table of Contents
- ### Table of Contents
-
+ 
 - [Básicos](#básicos)
   - [Definición de Proceso](#definición-de-proceso)
   - [Acciones y Estados](#acciones-y-estados)
@@ -26,8 +25,7 @@ Aquí tienes el índice generado para el contenido proporcionado:
 - [Resumen de Teoría de Java](#resumen-de-teoría-de-java)
 - [La salida estándar](#la-salida-estándar)
 
-Ahora, ¿hay algo más con lo que pueda ayudarte?
-
+ 
 
 ## Básicos
 ### Definición de Proceso:
