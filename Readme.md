@@ -658,7 +658,7 @@ int ultimo = 99;
 int i = 0;
 bool existe = false;
 
-while (primero <= ultimo) and !existe {
+while ((primero <= ultimo) and !existe) {
     i = (primero + ultimo) / 2;
     
     if (arregloNum[i] < busquedaNum) {
@@ -667,13 +667,14 @@ while (primero <= ultimo) and !existe {
         ultimo = i - 1;
     } else if (arregloNum[i] == busquedaNum) {
         existe = true;
-        print("Existe el número en la posición: " (i + 1))
+        print("Existe el número en la posición: " + (i + 1))
     }
     
     if(primero > ultimo) {
-        print("No existe el número")
+        print("No existe el número");
         }
 }
+
 
 
 ```
