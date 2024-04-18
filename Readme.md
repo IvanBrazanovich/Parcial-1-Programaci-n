@@ -632,7 +632,7 @@ centinela := verdadero
 primero := 0 
 ultimo:= 99
 while (centinela and (primero <= ultimo)) {
-    i := (primero + ultimo / 2)
+    i := (primero + ultimo) / 2
     if ( legajos[i] < legajoBuscado) {
         primero := i + 1
     } else if (legajos[i] > legajoBuscado) { 
